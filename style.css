@@ -246,18 +246,11 @@ a {
 }
 
 .sert__cont {
-    width: 0%;
-    height: 0px;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease-in-out;
-    z-index: 0;
+    display: none;
 }
 
 .sert__cont.active {
-    width: 100%;
-    opacity: 1;
-    visibility: visible;
+    display: block;
 }
 
 .cont__img {
