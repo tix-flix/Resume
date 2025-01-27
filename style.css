@@ -213,6 +213,58 @@ a {
 
 /* Первый блок end*/
 
+.sert {
+    margin-bottom: 100px;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(45deg, #fdf500, #fdf500e0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 6px dashed black;
+    padding: 20px 0;
+    font-family: "ryz";
+    font-size: 3rem;
+}
+
+.sert__btn {
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(180deg, #ff2a6d, #91183e);
+    font-size: 2rem;
+    border-radius: 15px;
+    font-family: "ryz";
+    margin-block: 10px;
+}
+
+.sert__btn:hover{
+    background: linear-gradient(180deg, #ff3977, #b11e4c);  
+}
+.sert__btn:active{
+    background: linear-gradient(180deg, #91183e, #ff2a6d);  
+}
+
+.sert__cont {
+    width: 0%;
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 0;
+}
+
+.sert__cont.active {
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont__img {
+    width: 100%;
+}
+
+
 .main__skills, .main__hobby, .main__proj, .main__footer {
     margin-bottom: 100px;
     width: 100%;
